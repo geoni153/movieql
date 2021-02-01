@@ -1,6 +1,13 @@
+const geoni = {
+    name: "geoni",
+    age: 18,
+    gender: "female"
+};
+
 const resolvers = {
     Query: {
-        name:() => "geoni"
+    //    name:() => "geoni"
+        person: () => geoni
     }
 };
 
