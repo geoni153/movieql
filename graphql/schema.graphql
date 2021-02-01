@@ -1,10 +1,11 @@
-type Geoni {
+type Person {
+    id: Int!
     name: String!
     age: Int!
     gender: String!
 }
 
 type Query {
-    # name: String!
-    person: Geoni!
+    people: [Person]!
+    person(id: Int!): Person
 }
